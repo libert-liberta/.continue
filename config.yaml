@@ -1,0 +1,13 @@
+name: Local Config
+version: 1.0.0
+schema: v1
+models:
+  - name: Anthropic Claude Sonnet Latest
+    provider: openrouter
+    model: ~anthropic/claude-sonnet-latest
+    # APIKEYを外部にする方法
+    # https://docs.continue.dev/faqs#managing-local-secrets-and-environment-variables
+    apiKey: ${{ secrets.OPENROUTER_API_KEY }}
+    roles:
+      - autocomplete
+      - edit
