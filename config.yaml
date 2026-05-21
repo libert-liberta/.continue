@@ -9,5 +9,6 @@ models:
     # https://docs.continue.dev/faqs#managing-local-secrets-and-environment-variables
     apiKey: ${{ secrets.OPENROUTER_API_KEY }}
     roles:
+      - chat
       - autocomplete
       - edit
